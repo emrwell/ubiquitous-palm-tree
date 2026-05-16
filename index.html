@@ -1,0 +1,364 @@
+Приложение А
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школа танцев «Ритм» – обучение танцам для детей и взрослых</title>
+    <meta name="description" content="Школа танцев Ритм – современные направления, опытные преподаватели, удобное расписание. Запись на пробное занятие.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="#home" class="logo">
+                <span class="logo__mark">R</span>
+                <span class="logo__text">Ритм</span>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="#about" class="nav__link">О школе</a></li>
+                    <li><a href="#directions" class="nav__link">Направления</a></li>
+                    <li><a href="#teachers" class="nav__link">Преподаватели</a></li>
+                    <li><a href="#schedule" class="nav__link">Расписание</a></li>
+                    <li><a href="#contacts" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <a href="#signup" class="btn btn--primary header__btn">Записаться</a>
+            <button class="burger" id="burger" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero" id="home">
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <p class="hero__sub">Школа танцев в твоём городе</p>
+                <h1 class="hero__title">Танцуй там, где тебя слышат</h1>
+                <p class="hero__text">
+                    Более 10 направлений для детей и взрослых.
+                    Опытные преподаватели, уютные залы и дружная команда –
+                    приходи на первое пробное занятие бесплатно.
+                </p>
+                <div class="hero__actions">
+                    <a href="#signup" class="btn btn--primary">Бесплатное занятие</a>
+                    <a href="#directions" class="btn btn--ghost">Все направления</a>
+                </div>
+            </div>
+            <div class="hero__image">
+                <img src="images/hero.jpg" alt="Зал школы танцев">
+            </div>
+        </div>
+    </section>
+
+    <!-- О школе -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section__title">О школе</h2>
+            <div class="about">
+                <div class="about__text">
+                    <p>
+                        Школа танцев «Ритм» работает более семи лет. За это время
+                        у нас прошли обучение свыше 1500 учеников разного возраста.
+                        Мы создаём пространство, где каждый может попробовать себя
+                        в танце – без оценок и сравнений, в комфортном темпе.
+                    </p>
+                    <p>
+                        В школе четыре оборудованных зала, удобные раздевалки и душ.
+                        Мы работаем как с новичками, которые впервые пришли на занятие,
+                        так и с продвинутыми учениками, готовящимися к выступлениям
+                        и фестивалям.
+                    </p>
+                </div>
+                <ul class="stats">
+                    <li><span class="stats__num">7+</span><span class="stats__label">лет работы</span></li>
+                    <li><span class="stats__num">10</span><span class="stats__label">направлений</span></li>
+                    <li><span class="stats__num">12</span><span class="stats__label">преподавателей</span></li>
+                    <li><span class="stats__num">1500+</span><span class="stats__label">учеников</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Направления -->
+    <section class="section section--gray" id="directions">
+        <div class="container">
+            <h2 class="section__title">Направления</h2>
+            <p class="section__lead">
+                Выберите подходящее направление. У нас есть программы для
+                начинающих, продолжающих и тех, кто готовится к сцене.
+            </p>
+            <div class="cards">
+
+                <article class="card">
+                    <div class="card__img"><img src="images/kids.jpg" alt="Детская хореография"></div>
+                    <div class="card__body">
+                        <h3 class="card__title">Детская хореография</h3>
+                        <p class="card__text">
+                            Для детей от 5 до 12 лет. Развитие пластики, чувства ритма
+                            и координации в игровой форме.
+                        </p>
+                        <span class="card__meta">от 6 лет · 60 мин</span>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__img"><img src="images/modern.jpg" alt="Современный танец"></div>
+                    <div class="card__body">
+                        <h3 class="card__title">Современный танец</h3>
+                        <p class="card__text">
+                            Hip-hop, jazz-funk и contemporary для подростков
+                            и взрослых любого уровня подготовки.
+                        </p>
+                        <span class="card__meta">от 14 лет · 75 мин</span>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__img"><img src="images/stretch.jpg" alt="Стретчинг"></div>
+                    <div class="card__body">
+                        <h3 class="card__title">Стретчинг</h3>
+                        <p class="card__text">
+                            Растяжка, гибкость и работа с телом. Отличное дополнение
+                            к любому танцевальному направлению.
+                        </p>
+                        <span class="card__meta">от 16 лет · 60 мин</span>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__img"><img src="images/aero.jpg" alt="Воздушная гимнастика"></div>
+                    <div class="card__body">
+                        <h3 class="card__title">Воздушная гимнастика</h3>
+                        <p class="card__text">
+                            Тренировки на полотнах и в гамаках. Сочетание силы,
+                            гибкости и эстетики движения.
+                        </p>
+                        <span class="card__meta">от 18 лет · 75 мин</span>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__img card__img--placeholder">
+                        <span>Бальные танцы</span>
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Бальные танцы</h3>
+                        <p class="card__text">
+                            Классическая программа: вальс, танго, ча-ча-ча.
+                            Возможны индивидуальные занятия в паре.
+                        </p>
+                        <span class="card__meta">от 10 лет · 90 мин</span>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__img card__img--placeholder">
+                        <span>Латина</span>
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Латина</h3>
+                        <p class="card__text">
+                            Сальса, бачата, реггетон. Энергичные направления
+                            для тех, кто любит ритм и движение.
+                        </p>
+                        <span class="card__meta">от 16 лет · 60 мин</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Преподаватели -->
+    <section class="section" id="teachers">
+        <div class="container">
+            <h2 class="section__title">Преподаватели</h2>
+            <p class="section__lead">
+                Действующие танцоры с опытом преподавания и участия в конкурсах.
+            </p>
+            <div class="teachers">
+
+                <article class="teacher">
+                    <div class="teacher__avatar">АК</div>
+                    <h3 class="teacher__name">Анна Кравцова</h3>
+                    <p class="teacher__role">Хореограф, современный танец</p>
+                    <p class="teacher__bio">
+                        Стаж преподавания 8 лет. Победитель региональных конкурсов
+                        по jazz-funk и contemporary.
+                    </p>
+                </article>
+
+                <article class="teacher">
+                    <div class="teacher__avatar">МС</div>
+                    <h3 class="teacher__name">Михаил Соколов</h3>
+                    <p class="teacher__role">Hip-hop, breakdance</p>
+                    <p class="teacher__bio">
+                        Опыт 10 лет. Участник всероссийских баттлов,
+                        ведёт группы для подростков и взрослых.
+                    </p>
+                </article>
+
+                <article class="teacher">
+                    <div class="teacher__avatar">ЕЛ</div>
+                    <h3 class="teacher__name">Екатерина Лазарева</h3>
+                    <p class="teacher__role">Детская хореография</p>
+                    <p class="teacher__bio">
+                        Педагог дополнительного образования. Работает с детьми
+                        от 5 до 12 лет, готовит группы к фестивалям.
+                    </p>
+                </article>
+
+                <article class="teacher">
+                    <div class="teacher__avatar">ОВ</div>
+                    <h3 class="teacher__name">Ольга Вершинина</h3>
+                    <p class="teacher__role">Стретчинг, растяжка</p>
+                    <p class="teacher__bio">
+                        Сертифицированный тренер. Индивидуальные программы
+                        с учётом физической подготовки ученика.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Расписание -->
+    <section class="section section--gray" id="schedule">
+        <div class="container">
+            <h2 class="section__title">Расписание</h2>
+            <p class="section__lead">
+                Выберите день, чтобы посмотреть занятия. Расписание актуально
+                на текущую неделю.
+            </p>
+            <div class="schedule__filter" id="dayFilter">
+                <button class="chip is-active" data-day="all">Все дни</button>
+                <button class="chip" data-day="mon">Пн</button>
+                <button class="chip" data-day="tue">Вт</button>
+                <button class="chip" data-day="wed">Ср</button>
+                <button class="chip" data-day="thu">Чт</button>
+                <button class="chip" data-day="fri">Пт</button>
+                <button class="chip" data-day="sat">Сб</button>
+            </div>
+            <div class="schedule__wrap">
+                <table class="schedule">
+                    <thead>
+                        <tr>
+                            <th>День</th>
+                            <th>Время</th>
+                            <th>Направление</th>
+                            <th>Преподаватель</th>
+                            <th>Зал</th>
+                        </tr>
+                    </thead>
+                    <tbody id="scheduleBody">
+                        <tr data-day="mon"><td>Понедельник</td><td>17:00</td><td>Детская хореография</td><td>Е. Лазарева</td><td>Зал 1</td></tr>
+                        <tr data-day="mon"><td>Понедельник</td><td>19:00</td><td>Современный танец</td><td>А. Кравцова</td><td>Зал 2</td></tr>
+                        <tr data-day="tue"><td>Вторник</td><td>18:00</td><td>Hip-hop</td><td>М. Соколов</td><td>Зал 2</td></tr>
+                        <tr data-day="tue"><td>Вторник</td><td>20:00</td><td>Стретчинг</td><td>О. Вершинина</td><td>Зал 3</td></tr>
+                        <tr data-day="wed"><td>Среда</td><td>17:00</td><td>Детская хореография</td><td>Е. Лазарева</td><td>Зал 1</td></tr>
+                        <tr data-day="wed"><td>Среда</td><td>19:30</td><td>Латина</td><td>А. Кравцова</td><td>Зал 2</td></tr>
+                        <tr data-day="thu"><td>Четверг</td><td>18:00</td><td>Воздушная гимнастика</td><td>О. Вершинина</td><td>Зал 4</td></tr>
+                        <tr data-day="thu"><td>Четверг</td><td>20:00</td><td>Современный танец</td><td>А. Кравцова</td><td>Зал 2</td></tr>
+                        <tr data-day="fri"><td>Пятница</td><td>17:00</td><td>Бальные танцы</td><td>М. Соколов</td><td>Зал 1</td></tr>
+                        <tr data-day="fri"><td>Пятница</td><td>19:00</td><td>Стретчинг</td><td>О. Вершинина</td><td>Зал 3</td></tr>
+                        <tr data-day="sat"><td>Суббота</td><td>11:00</td><td>Детская хореография</td><td>Е. Лазарева</td><td>Зал 1</td></tr>
+                        <tr data-day="sat"><td>Суббота</td><td>13:00</td><td>Hip-hop</td><td>М. Соколов</td><td>Зал 2</td></tr>
+                    </tbody>
+                </table>
+                <p class="schedule__empty" id="scheduleEmpty">В выбранный день занятий нет.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Запись на пробное занятие -->
+    <section class="section" id="signup">
+        <div class="container signup">
+            <div class="signup__info">
+                <h2 class="section__title">Запись на пробное занятие</h2>
+                <p>
+                    Оставьте заявку – администратор свяжется с вами в течение
+                    рабочего дня и подберёт удобную группу.
+                </p>
+                <p class="signup__note">
+                    Первое занятие бесплатно. Никаких обязательств –
+                    можно прийти, попробовать и решить.
+                </p>
+            </div>
+            <form class="form" id="signupForm" novalidate>
+                <div class="form__row">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" placeholder="Как к вам обращаться" required>
+                </div>
+                <div class="form__row">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                </div>
+                <div class="form__row">
+                    <label for="direction">Направление</label>
+                    <select id="direction" name="direction" required>
+                        <option value="">Выберите направление</option>
+                        <option>Детская хореография</option>
+                        <option>Современный танец</option>
+                        <option>Hip-hop</option>
+                        <option>Стретчинг</option>
+                        <option>Воздушная гимнастика</option>
+                        <option>Бальные танцы</option>
+                        <option>Латина</option>
+                        <option>Не определился, нужна консультация</option>
+                    </select>
+                </div>
+                <div class="form__row">
+                    <label for="comment">Комментарий</label>
+                    <textarea id="comment" name="comment" rows="3" placeholder="Удобное время, опыт занятий и т.д."></textarea>
+                </div>
+                <div class="form__check">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">Согласен на обработку персональных данных</label>
+                </div>
+                <button type="submit" class="btn btn--primary form__submit">Отправить заявку</button>
+                <p class="form__msg" id="formMsg"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="section section--gray" id="contacts">
+        <div class="container">
+            <h2 class="section__title">Контакты</h2>
+            <div class="contacts">
+                <div class="contacts__block">
+                    <h3>Адрес</h3>
+                    <p>г. Москва, ул. Танцевальная, д. 12, 2-й этаж</p>
+                </div>
+                <div class="contacts__block">
+                    <h3>Телефон</h3>
+                    <p><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+                </div>
+                <div class="contacts__block">
+                    <h3>E-mail</h3>
+                    <p><a href="mailto:info@ritm-dance.ru">info@ritm-dance.ru</a></p>
+                </div>
+                <div class="contacts__block">
+                    <h3>Часы работы</h3>
+                    <p>Пн – Пт: 10:00 – 22:00<br>Сб – Вс: 10:00 – 20:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__copy">© 2026 Школа танцев «Ритм». Все права защищены.</p>
+            <p class="footer__sub">Сайт разработан в учебных целях.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
